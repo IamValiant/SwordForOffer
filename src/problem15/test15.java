@@ -1,24 +1,18 @@
 package problem15;
 
 import org.junit.Test;
-import problem14.MaxCutting;
 
 
 /**
  * Created by Xueyong on 2018/6/7.
  */
 public class test15 {
-    MaxCutting mc = new MaxCutting();
+    NumberOf1 no = new NumberOf1();
 
     @Test
     public void test() {
-        // 功能测试：绳子长度 = 10
-        System.out.println("绳子长度 = 10 的最大值:"+mc.maxCutting(10));
-
-        // 边界值测试：绳子长度 = 0、1、2、3、4
-        for(int i=0;i<5;i++){
-            System.out.println("长度 = "+i+"的最大值:"+mc.maxCutting(i));
-        }
+        System.out.println(no.hammingWeight(3));
+        System.out.println(no.hammingWeight(-3));
     }
 }
 
